@@ -1,11 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bungee+Hairline&family=Megrim&family=Rationale&display=swap');
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Syncopate&family=Megrim&family=Rationale&display=swap');
 
 :root {
     --dourado: #BFA181;
-    --dourado-esuro: #110D09;
+    --dourado-escuro: #110D09;
     --areia: #a77a4a;
     --font-1: Black Ops One;
-    --font-2: Bungee Hairline;
+    --font-2: Syncopate;
     --font-3: Megrim;
     --font-4: Rationale
 }
@@ -15,7 +60,7 @@ html {
 }
 
 body {
-    background-color: var(--dourado-esuro);
+    background-color: var(--dourado-escuro);
     margin: 0;
     padding: 0;
 }
@@ -35,7 +80,7 @@ header {
 }
 
 .menu {
-    background-color: var(--dourado-esuro);
+    background-color: var(--dourado-escuro);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,10 +112,10 @@ a:hover {
 }
 
 .titulo {
-    margin-top: 70px;
-    margin-left: 70px;
+    margin-top: 10%;
+    margin-left: 3%;
     color: var(--dourado);
-    text-shadow: 0 0 10px #a77a4a;
+    text-shadow: 0 0 10px var(--areia);
     padding: 10px 20px;
 }
 
@@ -82,57 +127,81 @@ h1 {
 }
 
 .subtitulo {
-    font-size: 30px;
     margin-top: 0;
+    color: var(--dourado);
+    text-shadow: 0 0 10px var(--dourado);
+    font-size: 20px;
     font-family: var(--font-2);
-    color: var(--areia);
-    text-shadow: 0 0 10px #a77a4a;
+}
+
+h2 {
+    color: var(--dourado);
+    font-family: var(--font-3);
+    font-size: 45px;
+    text-shadow: 0 0 3px var(--areia);
 }
 
 section {
     display: flex;
     text-align: center;
     flex-direction: column;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     scroll-margin-top: 80px;
 }
 
-h2 {
-    color: var(--areia);
-    font-family: var(--font-3);
-    font-size: 45px;
-    text-shadow: 0 0 3px var(--areia);
+.item {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 section p {
     color: var(--dourado);
     font-family: var(--font-4);
+    line-height: 1;
+    font-size: 22px;
+    margin: 20px auto;
+    margin-top: 10px;
+
 }
 
 footer {
     display: flex;
     justify-content: space-between;
     text-align: left;
-    gap: 10px;
-    padding: 10px;
+    gap: 200px;
+    padding: 20px;
     background-color: var(--areia);
 }
 
 .nome {
     margin-left: 25%;
-}
-
-.nome h3, p {
     font-family: var(--font-4);
     color: var(--dourado-escuro);
+}
+
+.nome h3 {
+    font-size: 30px; 
+    margin-bottom: 10px;
+}
+
+.nome p {
+    font-size: 15px;
+    margin-bottom: 5px;
 }
 
 .rm {
     margin-right: 25%;
+    font-family: var(--font-4);
+    color: var(--dourado-escuro);
 }
 
-.rm h3, p {
-    color: var(--dourado-escuro);
-    font-family: var(--font-4);
+.rm h3 {
+    font-size: 30px; 
+    margin-bottom: 10px;
+}
+
+.rm p {
+    font-size: 15px;
+    margin-bottom: 5px;
 }
